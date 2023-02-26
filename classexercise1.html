@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      body {
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/058/793/small/abstract-blur-with-bokeh-light-for-background-usage-vector.jpg");
+        background-size: cover;
+      }
+      h1 {
+        color: indianred;
+        text-align: center;
+        font-family: georgia;
+        background-image: url("https://media.istockphoto.com/photos/abstract-background-white-light-blue-purple-color-gradient-defocused-picture-id1303182525?b=1&k=20&m=1303182525&s=612x612&w=0&h=DdkLxkRrSshNP-oPSpwDUm4GXphEXT4SLSeA9DaP4Qc=");
+        background-size: cover;
+        padding: 10px;
+      }
+      h3 {
+        text-align: center;
+        font-family: helvetica;
+        color: darkred;
+      }
+      p {
+        color: darkorchid;
+        font-weight: bold;
+      }
+      .lastParagraph {
+        text-align: center;
+        color: darkgreen;
+      }
+      .secondList {
+        list-style-type: disc;
+      }
+      ul {
+        color: hotpink;
+        list-style-type: circle;
+      }
+
+      footer {
+        text-align: right;
+        font-size: 12px;
+        font-family: cambria;
+        color: cornflowerblue;
+      }
+
+      button {
+        color: greenyellow;
+        background: black;
+        border-color: blueviolet;
+        border-radius: 3px;
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .paraLink {
+        color: darkturquoise;
+      }
+
+      a {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About me: <br />Galit</h1>
+    <h3>This page is about me, if that wasn't obvious</h3>
+    <p style="text-align: left" ;>My Interests:</p>
+    <ul>
+      <li>
+        I <strong>love</strong> footy 🏉
+        <ul class="secondList">
+          <li>I'm a Roosters fan 🐓</li>
+        </ul>
+      </li>
+      <li>I watch <em>a lot</em> of tv 📺</li>
+      <ul class="secondList">
+        <li>Mostly Law & Order 🧑🏻‍⚖️</li>
+      </ul>
+      <li>Burgers, need I say more? 🍔</li>
+    </ul>
+    <br />
+    <p class="lastParagraph">
+      I'm excited for this course and can't wait to see my graphic design skills
+      in CSS hopefully improve
+    </p>
+    <br />
+    <button>I love buttons but this doesn't do anything</button>
+    <br />
+    <p class="paraLink">
+      Click this
+      <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">link</a> that
+      goes somewhere mysterious
+    </p>
+    <br />
+    <footer>Thanks for looking at my page, it wasn't meant to be pretty</footer>
+    <script>
+      let loveButtons = document.querySelector("button");
+      loveButtons.addEventListener("click", buttonGo);
+
+      function buttonGo() {
+        alert("You tried");
+      }
+    </script>
+  </body>
+</html>
